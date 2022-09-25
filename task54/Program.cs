@@ -52,11 +52,11 @@ int[,] ReleaseMatrix(int[,] matrix)
 }
 
 Console.Write("Введите кол-во строк: ");
-int i = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите кол-во стобцов: ");
-int j = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 
-int[,] matrix = new int[i, j];
+int[,] matrix = new int[n, m];
 InputMatrix(matrix);
 PrintMatrix(matrix);
 PrintMatrix(ReleaseMatrix(matrix));
